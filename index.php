@@ -4,7 +4,7 @@ if (!isset($_COOKIE['logged']))
     header("Location: Login.php");  //It redirects the user to your login page
 
 
-// We reference our
+// We reference our css in the html head.
 ?>
 
 
@@ -59,7 +59,7 @@ include ('Config.php');
  FROM tours
  RIGHT JOIN packages ON tours.tourId = packages.packageId";
 
-    // Forstå ikke "Avanceret 2".
+    // dont understand "Avanceret 2", but i have used jQuery in my chrome extension
 
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
@@ -80,7 +80,6 @@ include ('Config.php');
             echo $row[keywords];
             echo "</td>";
             echo "<td class='td1'><img src='images/$row[graphic]'>";
-            echo $row[graphic];
             echo "</td>";
             echo "<td class='td1'>";
             echo $row[packageId];

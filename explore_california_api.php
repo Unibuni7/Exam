@@ -8,9 +8,6 @@
 
 header("Access-Control-Allow-Origin: *");
 
-
-// get the HTTP method, path and body of the request
-
 $request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 
 
@@ -41,7 +38,6 @@ if ($table == admin)  {
     $sql = "SELECT * from `$table`".($key ? "WHERE tourId = $key" : '');
 }
 
-// execute
 
 // excecute SQL statement
 $result = $conn->query($sql);

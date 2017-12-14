@@ -22,6 +22,8 @@ if ($_POST['submit']) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
+    // the password is explorerone and the password is password.
+
     if ($username==$row[userName] && $password==$row[password]){
         setcookie('logged','1');
         header("Location: Index.php"); //Redirect to Index page
