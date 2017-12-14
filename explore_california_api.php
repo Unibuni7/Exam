@@ -19,7 +19,8 @@ include ('Config.php');
 
 
 
-
+// To use the Api you have to say: http://localhost:apache-port/Exam/explore_california_api.php/table_name/id
+// you can remove the id part if you want to see the whole table.
 
 // retrieve the table and key from the path
 $table = preg_replace('/[^a-z0-9_]+/i','',array_shift($request));

@@ -1,0 +1,17 @@
+Hvordan vil du sikre databasen imod hackerangreb? Beskriv 2 metoder,
+der kan forhindre et SQL-injection angreb. Opret en fil med navnet databasesikkerhed.txt, og skriv dit svar heri:
+
+1. metode:
+Man kan lave en metode, og sæt brugerens input som parameter og det gøre man i prepared statement.
+Derfor er det bedst at bruge prepared statement når man laver en login-funktionalitet.
+
+2. metode:
+Man kan bruge hashing, fordi i hashing der krypter man passwordet og er meget svær at dekrypter,
+og for at gøre tingene endnu kompliceret så kan man bruge "salt" som gøre at man tilføjer en "string"
+efter eller foran passwordet og hasher det.
+
+3. metode:
+I de fleste applikationer så bruger man "charset" til "utf8", som gøre at man kan bruge næsten alle tegne der findes,
+for at undgå sql-injection så kan man sige at applikationen ikke accepterer tegn der kan bruges til at kommuniker med
+sql-databasen.
+
