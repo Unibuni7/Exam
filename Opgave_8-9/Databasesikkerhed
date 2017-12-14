@@ -15,3 +15,8 @@ I de fleste applikationer så bruger man "charset" til "utf8", som gøre at man 
 for at undgå sql-injection så kan man sige at applikationen ikke accepterer tegn der kan bruges til at kommuniker med
 sql-databasen.
 
+4. metode:
+
+Man kan bruge stored procedure som gemmer koden i databasen og bliver executed fra klienten.
+Den er ikke super god at bruge når man arbejder med et websted.
+

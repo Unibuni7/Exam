@@ -3,9 +3,9 @@
 if (!isset($_COOKIE['logged']))
     header("Location: Login.php");  //It redirects the user to your login page
 
+
+// We reference our
 ?>
-
-
 
 
     <!DOCTYPE html>
@@ -13,7 +13,6 @@ if (!isset($_COOKIE['logged']))
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="tablelayout.css">
-    <script src="Sort.js"></script>
 
 </head>
 
@@ -107,20 +106,3 @@ include ('Config.php');
 
 </body>
 </html>
-
-
-
-
-<?php
-/**
- * Created by PhpStorm.
- * User: slmns
- * Date: 14-12-2017
- * Time: 09:03
- */
-
-
-
-
-
-?>

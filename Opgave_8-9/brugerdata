@@ -1,0 +1,11 @@
+Hvis der gemmes brugerdata, der er personlige for brugeren (f.eks. brugernavn og password),
+hvordan kan de sikres imod afsløring i tilfælde af et SQL-injection angreb.
+Opret en fil med navnet brugerdata.txt, og skriv dit svar heri:
+
+Man kan bruge hashing og "salt" til det. Hashing krypter dit password også er det meget besværligt at dekrypter den.
+Man skal ikke dekrypter passwordet for at kunne bruge det bagefter, man skal bare samligne det password input som
+bliver hashet med den hashet password som ligger i databasen.
+Man kan bruge "Salt" sammen med hashing, Salt er en string som man kan ligge foran eller efter passwordet før det bliver hashet.
+"Salt" kan være random eller hardcoded i koden, hvis det er random så skal hver bruger have et unik "salt" string.
+
+
