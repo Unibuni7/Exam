@@ -1,0 +1,16 @@
+{
+  "name": "states table",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "This extension will show you a states table",
+  "icons": {
+    "16": "icon16.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "override.html"
+  },
+  "permissions": [
+    "http://localhost:8888/Exam/explore_california_api.php/states"
+  ]
+
+}

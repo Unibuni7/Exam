@@ -1,0 +1,20 @@
+h1 {
+    font-family: Arial;
+    color: black;
+
+}
+
+#tr1 {
+    font-family: "Arial Black";
+    color: blue;
+    cursor: pointer;
+}
+
+#tr2 {
+    color: black;
+}
+
+td {
+    border: 1px solid;
+}
+

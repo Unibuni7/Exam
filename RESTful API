@@ -1,0 +1,4 @@
+Restful Api:
+ Restful står for Representational state transfer og api står for application programming interface.
+ Restful api referer til at man bruger http protokolerne såsom GET, PUT, DELETE og POST,
+ og det gøre vi ikke i vores "explore_california_api.php" så den er ikke Restful Api.
